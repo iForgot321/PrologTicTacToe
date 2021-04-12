@@ -149,11 +149,11 @@ prompt(N) :-
 
 % Displays Possible Moves
 display_moves :-     
-     write('Select an Integer from 0 to 8 inclusive ').
+     write('Select an Integer from 0 to 8 inclusive. End your choice with a period ').
 
 % Prompts the User to select if they want to move first or second
 start :-
-    write('Select [0] to choose X, or [1] to choose O'), nl,
+    write('Select [0] to choose X, or [1] to choose O. End your choice with a period'), nl,
     read(N),
     (
         N == end_of_file -> halt(0) ;
